@@ -44,6 +44,7 @@ def parse_args():
     parser.add_argument('--weight_decay', type=float, default=0.05, help='Weight decay')
     parser.add_argument('--optimizer', type=str, default='adamw', help='Optimizer')
     parser.add_argument('--scheduler', type=str, default=None, help='Scheduler')
+    parser.add_argument('--grad_clip', type=float, default=None, help='Gradient clipping')
 
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument('--num_workers', type=int, default=1, help='Number of workers')
@@ -136,6 +137,8 @@ def train(args):
             # Backward pass
             optimizer.zero_grad()
             total_loss.backward()
+            if args.grad_clip is not None:
+                nn.utils.clip_grad_norm_(model.parameters(), args.grad_clip)
             optimizer.step()
             
             if scheduler is not None:

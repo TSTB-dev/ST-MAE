@@ -15,6 +15,113 @@
     # parser.add_argument('--seed', type=int, default=42, help='Random seed')
     # parser.add_argument('--device', type=str, default='cuda', help='Device')
 
+# carpet
+# grid
+# leather
+# tile
+# wood
+# bottle
+# cable
+# capsule
+# hazelnut
+# metal_nut
+# pill
+# screw
+# toothbrush
+# transistor
+# zipper
+
+
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name carpet \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_carpet_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda
+
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name grid \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_grid_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda
+
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name leather \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_leather_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda
+
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name tile \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_tile_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda
+
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name wood \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_wood_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda
+
 python3 src/evaluate.py \
     --data_root data/mvtec_ad \
     --class_name bottle \
@@ -31,5 +138,169 @@ python3 src/evaluate.py \
     --transform default \
     --log_interval 10 \
     --seed 42 \
-    --device cuda
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name cable \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_cable_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name capsule \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_capsule_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name hazelnut \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_hazelnut_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name metal_nut \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_metal_nut_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name pill \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_pill_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name screw \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_screw_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name toothbrush \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_toothbrush_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name transistor \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_transistor_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+ 
+python3 src/evaluate.py \
+    --data_root data/mvtec_ad \
+    --class_name zipper \
+    --img_size 256 \
+    --backbone_model vgg19 \
+    --stmae_model stmae_base \
+    --patch_size 4 \
+    --num_masks 1 \
+    --mask_ratio 0.5 \
+    --weights_path weights/mvtec_ad_zipper_stmae_base_vgg19.pth \
+    --gaussian_filter \
+    --gaussian_sigma 4 \
+    --gaussian_ksize 7 \
+    --transform default \
+    --log_interval 10 \
+    --seed 42 \
+    --device cuda 
+
+
 
